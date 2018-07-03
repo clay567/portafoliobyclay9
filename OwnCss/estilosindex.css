@@ -1,0 +1,6 @@
+body{
+	background-image: url(../images/fondoeditorial.jpg); ;
+    background-clip:content-box;
+	background-size: 1024px 780px;
+    background-repeat: no-repeat;
+}

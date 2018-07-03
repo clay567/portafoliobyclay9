@@ -1,0 +1,89 @@
+*{
+    box-sizing:border-box;
+}
+body {
+    border:solid yellow;
+    font-family: "Sofia";/*"Lato", sans-serif;*/
+    min-height: 768px;
+}
+div.sidenav {/*relacionado con @media*/
+    border:solid green;
+    height: 100%;
+    width:0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#111;/*rgba(0,0,0,0.5)*/
+    overflow-x: hidden;
+    padding-top: 80px;
+    text-align: center;
+}
+.sidenav a{/*relacionado con @media*/
+    /*padding: 6px 6px 6px 32px;*/
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+button.dropdown-btn {
+    /*padding: 6px 8px 6px 16px;*/
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+}
+button.dropdown-btn:focus{
+    outline: none;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.dropdown-btn:hover {
+    color: black;/*#f1f1f1*/
+    background-color: white;
+}
+/* Add an active class to the active dropdown button */
+.active {
+    /*background-color: white;
+    color: black;*/
+}
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: ;/*#262626*/
+    padding-left: 8px;
+}
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    /*float: right;
+    padding-right: 8px;*/
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    /*margin-left: 50px;*/
+    padding-right: 6px; 
+    /*background-color: white;
+    color:black;*/
+    font-weight: bolder;  
+}
+span#Derecha{
+    float: right;
+}
+div#contenido{
+    clear: both;
+    padding: 0 10px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
